@@ -14,3 +14,4 @@ flutter pub run build_runner build  --delete-conflicting-outputs
     ```shell
     flutter run lib/main.dart
     ```
+![Alt text](https://github.com/MyatTheingi/RPOS/blob/main/android/app/src/main/res/drawable/Screenshot_1716289728.png)
