@@ -5,10 +5,6 @@ import 'package:rpos_demo/curry_menu/viewmodel/menu_category.dart';
 class CurryMenuViewmodel extends ChangeNotifier {
   CurryMenuFormState formState = const CurryMenuFormState();
 
-  // bool get enableLoginButton =>
-  //     (!formState.userName.isNullOrEmpty) &&
-  //     (!formState.password.isNullOrEmpty);
-
   setFormState(CurryMenuFormState value) {
     formState = value;
     notifyListeners();

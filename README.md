@@ -2,10 +2,10 @@
 
 TPS - RPOS project.
 
-# Install
+## Install
 Before run app, open terminal and run this command first
 ```bash
-flutter pub run build_runner build  --delete-conflicting-outputs
+dart run build_runner build  --delete-conflicting-outputs
 ```
 
 ## Usage
@@ -14,4 +14,6 @@ flutter pub run build_runner build  --delete-conflicting-outputs
     ```shell
     flutter run lib/main.dart
     ```
-![Alt text](https://github.com/MyatTheingi/RPOS/blob/main/android/app/src/main/res/drawable/Screenshot_1716289728.png)
+## CURRY MENU PREVIEW SCREEN
+
+![Alt text](https://github.com/MyatTheingi/RPOS/blob/main/android/app/src/main/res/drawable/curry_menu_preview.png)

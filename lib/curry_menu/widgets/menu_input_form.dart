@@ -3,10 +3,10 @@ import 'package:flutter/widgets.dart';
 import 'package:provider/provider.dart';
 import 'package:rpos_demo/curry_menu/viewmodel/curry_menu_viewmodel.dart';
 import 'package:rpos_demo/widgets/selected_field/selected_field.dart';
-import '../widgets/text_form_field/clearable_text_form_field.dart';
-import '../widgets/text_form_field/currency_text_form_field.dart';
-import '../widgets/text_form_field/text_area_field.dart';
-import 'viewmodel/menu_category.dart';
+import '../../widgets/text_form_field/clearable_text_form_field.dart';
+import '../../widgets/text_form_field/currency_text_form_field.dart';
+import '../../widgets/text_form_field/text_area_field.dart';
+import '../viewmodel/menu_category.dart';
 
 class MenuInputForm extends StatelessWidget {
   const MenuInputForm({
@@ -38,13 +38,12 @@ class MenuInputForm extends StatelessWidget {
                   onChanged: vm.updateName,
                 ),
                 SizedBox(height: 8),
-                 CurrencyTextFormField(
-                  initialValue:  vm.formState.unitPrice,
+                CurrencyTextFormField(
+                  initialValue: vm.formState.unitPrice,
                   labelText: 'Unit Price',
                   required: true,
-                  onChanged:vm.updatePrice,
+                  onChanged: vm.updatePrice,
                 ),
-                
                 SizedBox(height: 8),
                 ClearableTextFormField(
                   initialValue: vm.formState.quantity,
@@ -53,13 +52,21 @@ class MenuInputForm extends StatelessWidget {
                   onChanged: vm.updateQuanntity,
                 ),
                 SizedBox(height: 8),
-                  TextAreaField(
-                  labelText: 'Additional Remark',
+                TextAreaField(
+                  labelText: 'Description',
                   onChanged: vm.updateRemark,
                 ),
-                 SizedBox(height: 16),
-                 Row(children: [Expanded(child: ElevatedButton(onPressed: () {  },
-                 child: Text('Add Menu'),))],)
+                SizedBox(height: 16),
+                Row(
+                  children: [
+                    Expanded(
+                        child: ElevatedButton(
+                          
+                      onPressed: () {},
+                      child: Text('Add Menu'),
+                    ))
+                  ],
+                )
               ],
             ),
           );
